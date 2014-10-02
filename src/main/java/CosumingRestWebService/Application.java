@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
  */
 public class Application {
 	public static void main(String[] args) {
+		// RestTemplate can do HTTP GET,POST,DELETE,PUT 
 		RestTemplate restTemplate = new RestTemplate();
 		Page page = restTemplate.getForObject("http://graph.facebook.com/salesforce", Page.class);
 		
