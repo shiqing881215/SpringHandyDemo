@@ -35,7 +35,7 @@
     	<!-- This is for helloServlet  -->
     	<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-web</artifactId>
-    	<version>1.1.1.RELEASE</version>
+    	<version>1.1.7.RELEASE</version>
     </dependency>
     <dependency>
     	<!-- This is for ConsumeWebRestService -->
@@ -66,6 +66,12 @@
     	<groupId>com.h2database</groupId>
     	<artifactId>h2</artifactId>
     	<version>1.4.181</version>
+    </dependency>
+    <dependency>
+        <!-- This is for MessagingWithRedis  -->
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-redis</artifactId>
+    	<version>1.1.7.RELEASE</version>
     </dependency>
   </dependencies>
 </project>
