@@ -14,6 +14,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <!-- Attention : This is really a BAD PRACTICE to put multiple projects dependency together.
+       If you have two version of dependencies, it will MESS UP your code 
+       So if you want to try any of these handy projects, please try them separately in individual project with
+       the required dependency marked below.
+       The reason I did this is to have them all stay in a single Github project to easy to find -->
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -72,6 +77,23 @@
     	<groupId>org.springframework.boot</groupId>
     	<artifactId>spring-boot-starter-redis</artifactId>
     	<version>1.1.7.RELEASE</version>
+    </dependency>
+    <dependency>
+        <!-- This is for ValidatingFormInput, HTML template engine  -->
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+    	<version>1.1.7.RELEASE</version>
+    </dependency>
+    <dependency>
+        <!-- This is for ValidatingFormInput  -->
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-validator</artifactId>
+    	<version>5.1.0.Final</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.apache.tomcat.embed</groupId>
+    	<artifactId>tomcat-embed-el</artifactId>
+    	<version>7.0.52</version>
     </dependency>
   </dependencies>
 </project>
